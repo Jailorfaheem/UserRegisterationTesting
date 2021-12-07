@@ -11,7 +11,7 @@ namespace ExceptionTest
         {
             //AAA method
             //Arrange
-            string name = "amir";
+            string name = "faheem";
             string expected = "invalid";
             //creating object of moodanalyzer class and passing message
             //RegularExpression regularExpression = new RegularExpression(name);
@@ -28,11 +28,26 @@ namespace ExceptionTest
         {
             //AAA method
             //Arrange
-            string lastName = "amir";
+            string lastName = "faheem";
             string expected = "invalid";
 
             //Act
             string actual = RegularExpression.LastNameNameValid(lastName);
+
+            //Assert
+            //comparing actual and expected value
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void ValidEmailIdOfUser()
+        {
+            //AAA method
+            //Arrange
+            string emailId = " ";
+            string expected = "invalid";
+
+            //Act
+            string actual = RegularExpression.EmailValid(emailId);
 
             //Assert
             //comparing actual and expected value

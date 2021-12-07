@@ -53,5 +53,19 @@ namespace ExceptionTest
             //comparing actual and expected value
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void ValidMobileNumOfUser()
+        {
+            //AAA method
+            //Arrange
+            string num = " ";
+            string expected = "invalid";
+            //Act
+            string actual = RegularExpression.MobileNumValid(num);
+
+            //Assert
+            //comparing actual and expected value
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

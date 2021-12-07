@@ -67,5 +67,20 @@ namespace ExceptionTest
             //comparing actual and expected value
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void ValidPasswordOfUser()
+        {
+            //AAA method
+            //Arrange
+            string password = " ";
+            string expected = "invalid";
+
+            //Act
+            string actual = RegularExpression.PasswordValid(password);
+
+            //Assert
+            //comparing actual and expected value
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
